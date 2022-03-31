@@ -2,10 +2,10 @@
 
 ## Week 1
 
-* [ ]  Finish Doumentation
+* [ ]  Finish Documentation
 * [ ]  Start Backend Work
 
 ## Week 2
 
 * [ ]  Finish Backend
-* [ ]  THrow together simple frontend
+* [ ]  Throw together simple frontend
