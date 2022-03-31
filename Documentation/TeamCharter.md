@@ -28,6 +28,13 @@
 
 *How we interact, make decisions, resolve conflicts.*
 
+ - We will treat each other with respect.
+ - We will be cooperative and open to compromise.
+ - We will listen to what others have to say.
+
 ### Communications Process
 
 *The means and the frequency in which the team will communicate (and how).*
+
+- The primary means of communication will be Slack and Blackboard Collaborate.
+- Meetings will be held on a weekly basis according to the schedules of the members.
