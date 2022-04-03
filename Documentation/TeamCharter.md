@@ -12,13 +12,6 @@
 
 *What roles are defined in the team, skills that team members should have.*
 
-### Scope
-
-*What this team should be focused on and anything that is out of bounds.*
-
-### Stakeholders
-
-*The people to whom the team is accountable and those impacted by the work.*
 
 ### Decision Making Guidelines
 
