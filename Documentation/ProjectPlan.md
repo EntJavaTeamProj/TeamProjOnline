@@ -1,5 +1,7 @@
 # Project Plan
 
+###### (subject to change)
+
 ## Week 1
 
 * [ ]  Finish Documentation (Charter, Resume, Project Plan)
