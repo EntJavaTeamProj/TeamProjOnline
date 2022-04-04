@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="TeamProjOnline:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>TeamProjOnline</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="TeamProjOnline.war">
+      <element id="artifact" artifact-name="TeamProjOnline:war exploded" />
+    </root>
+  </artifact>
+</component>
