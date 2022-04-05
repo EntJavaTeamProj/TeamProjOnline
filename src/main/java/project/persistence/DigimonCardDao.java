@@ -9,9 +9,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import java.util.*;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import project.digimoncard.DigimonCardResponse;
 
 public class DigimonCardDao {
+    private final Logger logger = LogManager.getLogger(this.getClass());
     DigimonCardResponse getCardByName(String name) {
         DigimonCardResponse digimonCardResponse = null;
         return digimonCardResponse;
@@ -40,8 +44,7 @@ public class DigimonCardDao {
         try {
             digimonCardResponse = mapper.readValue(response, DigimonCardResponse.class);
         } catch (JsonProcessingException jsonProcessingException) {
-            jsonProcessingException.printStackTrace();
-            // TODO set up logging
+            logger.error("Error with data: " + parameter, jsonProcessingException);
         }
 
         return digimonCardResponse;
