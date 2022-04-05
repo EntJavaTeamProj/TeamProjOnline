@@ -52,6 +52,8 @@ Ashley
 
 #### Has neat handwriting?
 
+Matthew
+
 #### Is good with numbers, stats, data?
 
 Ivy
@@ -84,7 +86,11 @@ Ivy
 
 #### Currently works in IT?
 
+Matthew
+
 #### Can explain MVC?
+
+Matthew
 
 #### Has experience with APIs?
 
@@ -100,7 +106,11 @@ Ivy
 
 #### Has performed in front of a crowd?
 
+Matthew
+
 #### Can speak more than one language?
+
+Matthew
 
 #### Has started their own business?
 
