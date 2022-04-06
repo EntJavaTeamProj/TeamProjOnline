@@ -15,7 +15,7 @@ import java.util.*;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.hibernate.SessionFactory;
-import project.digimoncard.DigimonCardResponse;
+import project.entity.DigimonCardResponse;
 
 public class DigimonCardDao {
     private final Logger logger = LogManager.getLogger(this.getClass());
@@ -25,7 +25,7 @@ public class DigimonCardDao {
         digimonCardResponseList = new ArrayList<>();
     }
 
-    DigimonCardResponse getCardByName(String name) {
+    public List<DigimonCardResponse> getCardByName(String name) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target("https://digimoncard.io/api-public/search.php?n=" + name);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
@@ -41,10 +41,10 @@ public class DigimonCardDao {
         //  For Error Reference: Json Processing Exception: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `project.digimoncard.DigimonCardResponse` out of START_ARRAY token
         // This only works because MetalGreymon cardnumber BO-01 is the first in the list, Test would fail if
         // it was anything other than .get(0) or the first index value
-        return digimonCardResponseList.get(0);
+        return digimonCardResponseList;
     }
 
-    DigimonCardResponse getCardByNumber(String cardNumber) {
+    public DigimonCardResponse getCardByNumber(String cardNumber) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target("https://digimoncard.io/api-public/search.php?card=" + cardNumber);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
