@@ -10,7 +10,8 @@ Ivy
 
 #### Is a good listener?
 
-Ashley
+Ashley,
+Eduardo
 
 #### Can manage details?
 
@@ -28,7 +29,7 @@ Ivy
 
 #### Likes to follow directions?
 
-Ivy
+Ivy, Eduardo
 
 #### Thinks fast on their feet?
 
@@ -40,7 +41,7 @@ Ivy
 
 #### Is a thinker, rather than a talker?
 
-Ashley
+Ashley, Eduardo
 
 #### Is a talker, rather than a thinker?
 
@@ -68,7 +69,7 @@ Ashley
 
 #### Likes to pull ideas together?
 
-Ashley
+Ashley, Eduardo
 
 #### Can draw?
 
@@ -76,7 +77,7 @@ Ashley
 
 #### Can handle criticism?
 
-Ivy
+Ivy, Eduardo
 
 #### Has served as a tech lead?
 
@@ -110,13 +111,13 @@ Matthew
 
 #### Can speak more than one language?
 
-Matthew
+Matthew, Eduardo
 
 #### Has started their own business?
 
 #### Had done some high ed courses outside of Madison College’s program?
 
-Ivy
+Ivy,
 Ashley
 
 ## Additional Information
