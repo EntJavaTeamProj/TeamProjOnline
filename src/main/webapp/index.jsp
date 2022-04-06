@@ -42,6 +42,7 @@
 
             </fieldset>
         </form>
+        <!-- Card Result -->
         <c:if test="${cards != null}">
             <div class="row">
                 <table class="searchTable display table table-hover">

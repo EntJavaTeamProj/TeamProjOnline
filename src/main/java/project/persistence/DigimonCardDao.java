@@ -35,12 +35,6 @@ public class DigimonCardDao {
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Json Processing Exception: ", jsonProcessingException);
         }
-        // TODO return a list of the result because there can be multiple variants of MetalGreymon cards
-        //  e.g.: put in MetalGreymon as input and all MetalGreymon cards are in the response
-        //  Single value will result in an error since response returns an array
-        //  For Error Reference: Json Processing Exception: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `project.digimoncard.DigimonCardResponse` out of START_ARRAY token
-        // This only works because MetalGreymon cardnumber BO-01 is the first in the list, Test would fail if
-        // it was anything other than .get(0) or the first index value
         return digimonCardResponseList;
     }
 
@@ -60,6 +54,8 @@ public class DigimonCardDao {
         return digimonCardResponseList.get(0);
     }
 
+// empty search already results in all the cards from digimon io api
+// although having a method to get all cards may still be needed
 //    Set<DigimonCardResponse> getAllCards() {
 //
 //        Client client = ClientBuilder.newClient();

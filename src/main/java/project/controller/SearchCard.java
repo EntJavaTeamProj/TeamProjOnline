@@ -26,6 +26,9 @@ public class SearchCard extends HttpServlet {
         ServletContext context = req.getSession().getServletContext();
         HttpSession session = req.getSession();
         String url;
+        // TODO: figure a way to also use card number as input
+        //  in order to get unique singular results
+        //  such as BO-01 getting one result of MetalGreymon
         // grabs the search term from the form
         String searchTerm = req.getParameter("searchTerm");
 
