@@ -1,5 +1,10 @@
 <%@ include file="template/taglib.jsp" %>
 <c:import url="template/head.jsp" />
+<script type="text/javascript" class="init">
+    $(document).ready( function () {
+        $('.searchTable').DataTable();
+    } );
+</script>
 <html>
 <body>
 <div class="container">
@@ -15,7 +20,7 @@
         <h2 class="text-center">Hello World</h2>
     </div>
     <div class="row">
-        <form class="form-horizontal">
+        <form class="form-horizontal" action="searchCard" method="GET">
             <fieldset>
 
                 <!-- Form Name -->
@@ -25,7 +30,7 @@
                 <div class="form-group">
                     <label class="col-md-4 control-label" for="Card Name">Card Name</label>
                     <div class="col-md-4">
-                        <input id="Card Name" name="Card Name" type="text" placeholder="Card Name" class="form-control input-md">
+                        <input id="Card Name" name="searchTerm" type="text" placeholder="Card Name" class="form-control input-md">
                     </div>
                 </div>
                 <!-- Button -->
@@ -37,9 +42,28 @@
 
             </fieldset>
         </form>
+        <c:if test="${cards != null}">
+            <div class="row">
+                <table class="searchTable display table table-hover">
+                    <thead>
+                    <th>Card Name</th>
+                    <th>Card Number</th>
+                    </thead>
+                    <tbody>
+                    <c:forEach var="card" items="${cards}">
+                        <tr>
+                            <th>${card.cardName}</th>
+                            <th>${card.cardNumber}</th>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                </table>
+            </div>
+        </c:if>
+
     </div>
 </div>
-
+<c:remove var="cards" />
 <c:import url="template/bs-js.jsp" />
 </body>
 </html>
