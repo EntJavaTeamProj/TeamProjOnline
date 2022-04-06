@@ -1,0 +1,22 @@
+[
+  {
+    "name": "MetalGreymon",
+    "type": "Digimon",
+    "color": "Yellow",
+    "stage": "Ultimate",
+    "attribute": "Virus",
+    "level": null,
+    "play_cost": null,
+    "evolution_cost": null,
+    "cardrarity": null,
+    "artist": null,
+    "dp": null,
+    "cardnumber": "BO-01",
+    "maineffect": null,
+    "soureeffect": null,
+    "set_name": "Series 1 Booster Pack",
+    "card_sets": [
+      "Series 1 Booster Pack"
+    ]
+  }
+]
