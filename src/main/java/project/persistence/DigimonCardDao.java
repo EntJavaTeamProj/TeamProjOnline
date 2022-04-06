@@ -36,7 +36,7 @@ public class DigimonCardDao {
             logger.error("Json Processing Exception: ", jsonProcessingException);
         }
         // TODO return a list of the result because there can be multiple variants of MetalGreymon cards
-        //  e.g.: put in MetalGreymon as input and all MetalGreymon searches show
+        //  e.g.: put in MetalGreymon as input and all MetalGreymon cards are in the response
         //  Single value will result in an error since response returns an array
         //  For Error Reference: Json Processing Exception: com.fasterxml.jackson.databind.exc.MismatchedInputException: Cannot deserialize instance of `project.digimoncard.DigimonCardResponse` out of START_ARRAY token
         // This only works because MetalGreymon cardnumber BO-01 is the first in the list, Test would fail if
@@ -69,7 +69,7 @@ public class DigimonCardDao {
 //        Set<DigimonCardResponse> digimonCardResponse = null;
 //        try {
 //            // TODO figure out how to do with a collection
-//            // TODO reference list mapper object above to try and grab all the cards. Probably needs a container object class to hold and return all the cards
+//            // TODO reference list mapper object above to try and grab all the cards. Return the list of DigimonCardResponse objects, will have to change some test code
 //            digimonCardResponse = mapper.readValue(response, DigimonCardResponse.class);
 //        } catch (JsonProcessingException jsonProcessingException) {
 //            logger.error("Json Processing Exception: ", jsonProcessingException);
