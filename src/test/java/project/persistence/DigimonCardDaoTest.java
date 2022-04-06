@@ -25,8 +25,8 @@ class DigimonCardDaoTest {
      */
     @Test
     void getCardByNameSuccess() {
-        logger.info(cardDao.getCardByName("MetalGreymon").getCardNumber());
-        assertEquals("BO-01", cardDao.getCardByName("MetalGreymon").getCardNumber());
+        logger.info(cardDao.getCardByName("MetalGreymon").get(0).getCardNumber());
+        assertEquals("BO-01", cardDao.getCardByName("MetalGreymon").get(0).getCardNumber());
     }
 
     /**
@@ -34,7 +34,7 @@ class DigimonCardDaoTest {
      */
     @Test
     void getCardByNumberSuccess() {
-        logger.info(cardDao.getCardByName("MetalGreymon").getCardNumber());
+        logger.info(cardDao.getCardByNumber("BO-01").getCardNumber());
         assertEquals("BO-01", cardDao.getCardByNumber("BO-01").getCardNumber());
     }
 
