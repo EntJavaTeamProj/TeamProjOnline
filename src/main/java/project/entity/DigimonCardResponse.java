@@ -1,30 +1,30 @@
-package project.digimoncard;
+package project.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class DigimonCardResponse{
+public class DigimonCardResponse {
 
 	@JsonProperty("name")
-	private String name;
+	private String cardName;
 
 	@JsonProperty("cardnumber")
-	private String cardnumber;
+	private String cardNumber;
 
-	public String getName(){
-		return name;
+	public String getCardName(){
+		return cardName;
 	}
 
 	public String getCardNumber(){
-		return cardnumber;
+		return cardNumber;
 	}
 
 	@Override
 	public String toString() {
 		return "DigimonCardResponse{" +
-				"name='" + name + '\'' +
-				", cardnumber='" + cardnumber + '\'' +
+				"name='" + cardName + '\'' +
+				", cardnumber='" + cardNumber + '\'' +
 				'}';
 	}
 }
