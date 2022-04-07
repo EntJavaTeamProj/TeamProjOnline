@@ -8,10 +8,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarsToggle">
             <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">link</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">link2</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">link3</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">link4</a></li>
+                <li class="nav-item"><a class="nav-link" href="about">About</a></li>
             </ul>
         </div>
     </div>

@@ -2,7 +2,6 @@
 
 Implements both the tcgplayer api and digimoncard.io api to combine card information and card pricing information into a neat package. Made to be implemented into more advanced programs so that card searches on those programs provide more in depth information
 
-
 ## Made By:
 
 [Ivy Jochem](https://github.com/ScarletIvy)
@@ -12,7 +11,6 @@ Implements both the tcgplayer api and digimoncard.io api to combine card informa
 [Eduardo Burzlaff](https://github.com/eburzlaff)
 
 [Matthew Lor](https://github.com/Mlor10)
-
 
 ## APIs Used
 

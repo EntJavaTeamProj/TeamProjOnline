@@ -17,9 +17,6 @@
     </div>
 
     <div class="row">
-        <h2 class="text-center">Hello World</h2>
-    </div>
-    <div class="row">
         <form class="form-horizontal" action="searchCard" method="GET">
             <fieldset>
 
