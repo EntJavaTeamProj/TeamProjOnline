@@ -82,7 +82,7 @@ public class DigimonCardResponse {
 		return level;
 	}
 
-	public String getCardarity(){
+	public String getCardRarity(){
 		return cardRarity;
 	}
 
@@ -94,7 +94,7 @@ public class DigimonCardResponse {
 		return imageUrl;
 	}
 
-	public String getMaineffect(){
+	public String getMainEffect(){
 		return mainEffect;
 	}
 
@@ -130,7 +130,7 @@ public class DigimonCardResponse {
 		return attribute;
 	}
 
-	public String getCardnumber(){
+	public String getCardNumber(){
 		return cardNumber;
 	}
 
