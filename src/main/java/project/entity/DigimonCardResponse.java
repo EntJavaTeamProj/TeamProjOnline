@@ -50,7 +50,7 @@ public class DigimonCardResponse {
 	@JsonProperty("play_cost")
 	private int playCost;
 
-	@JsonProperty("card_name")
+	@JsonProperty("name")
 	private String cardName;
 
 	@JsonProperty("evolution_cost")
@@ -59,7 +59,7 @@ public class DigimonCardResponse {
 	@JsonProperty("attribute")
 	private String attribute;
 
-	@JsonProperty("card_number")
+	@JsonProperty("cardnumber")
 	private String cardNumber;
 
 	public Object getSoureEffect(){
