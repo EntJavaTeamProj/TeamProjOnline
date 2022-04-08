@@ -79,12 +79,6 @@ Ashley
 
 Ivy, Eduardo
 
-#### Has served as a tech lead?
-
-#### Has served as a project manager?
-
-#### Uses social media for work?
-
 #### Currently works in IT?
 
 Matthew
@@ -92,14 +86,6 @@ Matthew
 #### Can explain MVC?
 
 Matthew
-
-#### Has experience with APIs?
-
-#### Has experience with Git branches?
-
-#### Has had to fire someone?
-
-#### Has had to hire someone?
 
 #### Has been on call during an emergency?
 
@@ -112,8 +98,6 @@ Matthew
 #### Can speak more than one language?
 
 Matthew, Eduardo
-
-#### Has started their own business?
 
 #### Had done some high ed courses outside of Madison College’s program?
 

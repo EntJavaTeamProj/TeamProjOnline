@@ -20,8 +20,6 @@
 
 * We feel that rigid roles are too restrictive for our purposes, instead, weve decided to assign roles on a task by task basis. This way, we can remain flexible and adapt to tasks at hand.
 
-
-
 **Skills**
 
 - Interacting with a repository through the usage of an IDE.

@@ -22,9 +22,9 @@
 
   <div class="row">
     <p>About</p>
-    <p>Implements both the tcgplayer api and digimoncard.io api to combine card information and card pricing information into a neat package. Made to be implemented into more advanced programs so that card searches on those programs provide more in depth information</p>
+    <p>Implements both the digimon api and digimoncard.io api to combine card information and digimon information into a neat package. Made to be implemented into more advanced programs so that card searches on those programs provide more in depth information.</p>
     <p class="text-reset text-decoration-none"><a href="https://github.com/EntJavaTeamProj/TeamProjOnline.git">Github Repo</a></p>
-    <p class="text-reset text-decoration-none"><a href="https://docs.tcgplayer.com/docs/getting-started">TCGPlayer API</a></p>
+    <p class="text-reset text-decoration-none"><a href="https://digimon-api.herokuapp.com/">Digimon API</a></p>
     <p class="text-reset text-decoration-none"><a href="https://documenter.getpostman.com/view/14059948/TzecB4fH">digimoncard.io API</a></p>
   </div>
 </div>

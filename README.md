@@ -1,6 +1,6 @@
 # Digimon Card Search System (DCSS)
 
-Implements both the tcgplayer api and digimoncard.io api to combine card information and card pricing information into a neat package. Made to be implemented into more advanced programs so that card searches on those programs provide more in depth information
+Implements both the digimon api and digimoncard.io api to combine card information and digimon information into a neat package. Made to be implemented into more advanced programs so that card searches on those programs provide more in depth information.
 
 ## Made By:
 
@@ -20,8 +20,8 @@ Used for baseline Card info
 
 [Source](https://documenter.getpostman.com/view/14059948/TzecB4fH)
 
-### TCGPlayer API
+### Digimon API
 
-Used to get card pricing information
+Used to get Individual digimon info
 
-[Source](https://docs.tcgplayer.com/docs/getting-started)
+[Source](https://digimon-api.herokuapp.com/)
