@@ -157,7 +157,29 @@ public class DigimonCardResponse {
 		"image_url":"https://images.digimoncard.io/images/cards/BT1-010.jpg"}
 	*/
 
-
+	@Override
+	public String toString() {
+		return "DigimonCardResponse{" +
+				"soureEffect=" + soureEffect +
+				", color='" + color + '\'' +
+				", digiType='" + digiType + '\'' +
+				", cardSets=" + cardSets +
+				", level=" + level +
+				", cardRarity='" + cardRarity + '\'' +
+				", artist='" + artist + '\'' +
+				", imageUrl='" + imageUrl + '\'' +
+				", mainEffect='" + mainEffect + '\'' +
+				", type='" + type + '\'' +
+				", dp=" + dp +
+				", stage='" + stage + '\'' +
+				", setName='" + setName + '\'' +
+				", playCost=" + playCost +
+				", cardName='" + cardName + '\'' +
+				", evolutionCost=" + evolutionCost +
+				", attribute='" + attribute + '\'' +
+				", cardNumber='" + cardNumber + '\'' +
+				'}';
+	}
 
 // TODO: add relevant card info such as...
 //     "name": "MetalGreymon",
