@@ -25,9 +25,9 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="searchTerm">Search Term</label>
+                    <label class="col-md-4 control-label" for="searchEntry">Search Term</label>
                     <div class="col-md-4">
-                        <input id="searchTerm" name="searchTerm" type="text" placeholder="Search Term" class="form-control input-md" required>
+                        <input id="searchEntry" name="searchEntry" type="text" placeholder="Search Entry" class="form-control input-md" required>
                         <span class="help-block">Use cardname/[card name] for card name and cardnumber/[card number] for card number</span>
                     </div>
                 </div>
@@ -45,29 +45,10 @@
             ${errorMSG}
         </div>
         </c:if>
-        <!-- Card Result -->
-        <c:if test="${cards != null}">
-            <div class="row">
-                <table class="searchTable display table table-hover">
-                    <thead>
-                    <th>Card Name</th>
-                    <th>Card Number</th>
-                    </thead>
-                    <tbody>
-                    <c:forEach var="card" items="${cards}">
-                        <tr>
-                            <th>${card.cardName}</th>
-                            <th>${card.cardNumber}</th>
-                        </tr>
-                    </c:forEach>
-                    </tbody>
-                </table>
-            </div>
-        </c:if>
 
     </div>
 </div>
-<c:remove var="cards" />
+<c:remove var="errorMSG" />
 <c:import url="template/bs-js.jsp" />
 </body>
 </html>
