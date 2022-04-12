@@ -33,17 +33,6 @@
                 </div>
                 <br>
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="Types">Type of Card</label>
-                    <div class="col-md-4">
-                        <select id="Types" name="Types" class="form-control" required>
-                            <option value="Digimon">Digimon</option>
-                            <option value="Option">Option</option>
-                            <option value="Tamer">Tamer</option>
-                            <option value="Digi-Egg">Digi-Egg</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group">
                     <div class="col-md-4">
                         <button id="Search" name="Search" class="btn btn-primary">Search</button>
                     </div>
