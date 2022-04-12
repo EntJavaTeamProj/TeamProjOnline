@@ -25,13 +25,15 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="Card Name">Card Name</label>
+                    <label class="col-md-4 control-label" for="searchTerm">Search Term</label>
                     <div class="col-md-4">
-                        <input id="Card Name" name="searchTerm" type="text" placeholder="Card Name" class="form-control input-md" required>
+                        <input id="searchTerm" name="searchTerm" type="text" placeholder="Search Term" class="form-control input-md" required>
+                        <span class="help-block">Use cardname/[card name] for card name and cardnumber/[card number] for card number</span>
                     </div>
                 </div>
+                <br>
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="Types">Type of card</label>
+                    <label class="col-md-4 control-label" for="Types">Type of Card</label>
                     <div class="col-md-4">
                         <select id="Types" name="Types" class="form-control" required>
                             <option value="Digimon">Digimon</option>

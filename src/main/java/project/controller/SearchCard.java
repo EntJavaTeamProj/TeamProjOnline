@@ -31,14 +31,16 @@ public class SearchCard extends HttpServlet {
         //  in order to get unique singular results
         //  such as BO-01 getting one result of MetalGreymon
         // grabs the search term from the form
+
         String searchTerm = req.getParameter("searchTerm");
         String[] type = searchTerm.split("/");
-        if(type[0].equals("name")){
+
+        if(type[0].equals("cardname")){
             searchTerm = type[1];
-            url = "/cardname/searchTerm";
-        }else if (type[0].equals("number")){
+            url = "cardname/" + searchTerm;
+        }else if (type[0].equals("cardnumber")){
             searchTerm = type[1];
-            url = "/cardnumber/searchTerm";
+            url = "cardnumber/" + searchTerm;
         }else{
             url = "/error";
         }
