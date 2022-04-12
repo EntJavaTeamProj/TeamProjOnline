@@ -23,6 +23,7 @@ import java.io.IOException;
 public class SearchCard extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setAttribute("errorMSG", null);
         ServletContext context = req.getSession().getServletContext();
         HttpSession session = req.getSession();
         String url;
@@ -36,7 +37,7 @@ public class SearchCard extends HttpServlet {
 
         // empty string searchTerm gives all cards by default
         if (searchTerm != null) {
-            url = "/indexServlet";
+            url = "/home";
             session.setAttribute("cards", cardDao.getCardByName(searchTerm));
         } else {
             // error page

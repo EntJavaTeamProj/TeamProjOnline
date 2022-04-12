@@ -49,6 +49,11 @@
 
             </fieldset>
         </form>
+        <c:if test="${errorMSG != null}">
+        <div class="alert alert-danger row" role="alert">
+            ${errorMSG}
+        </div>
+        </c:if>
         <!-- Card Result -->
         <c:if test="${cards != null}">
             <div class="row">

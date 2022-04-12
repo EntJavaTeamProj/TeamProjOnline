@@ -9,19 +9,24 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * Servlet to the index jsp page
+ * Servlet that forwards to an error page
  */
-
 @WebServlet(
-        urlPatterns = {"/home"}
+        urlPatterns = {"/error400"}
 )
-
-public class IndexServlet extends HttpServlet {
-    @Override
+public class error400 extends HttpServlet {
+    /**
+     * Handles HTTP GET requests
+     * @param req servlet request
+     * @param resp servlet response
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        String url = "/index.jsp";
 
+        String url = "index.jsp";
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+        req.setAttribute("errorMSG", "Bad request, try searching again");
         dispatcher.forward(req, resp);
     }
 }

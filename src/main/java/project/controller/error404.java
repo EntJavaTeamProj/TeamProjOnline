@@ -12,9 +12,9 @@ import java.io.IOException;
  * Servlet that forwards to an error page
  */
 @WebServlet(
-        urlPatterns = {"/error"}
+        urlPatterns = {"/error404"}
 )
-public class Error extends HttpServlet {
+public class error404 extends HttpServlet {
     /**
      * Handles HTTP GET requests
      * @param req servlet request
@@ -24,8 +24,9 @@ public class Error extends HttpServlet {
      */
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String url = "error.jsp";
+        String url = "index.jsp";
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
+        req.setAttribute("errorMSG", "error, not found");
         dispatcher.forward(req, resp);
     }
 }
