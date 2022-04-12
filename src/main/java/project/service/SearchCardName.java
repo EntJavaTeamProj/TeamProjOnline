@@ -40,6 +40,7 @@ public class SearchCardName {
         List<DigimonCardResponse> responseList = responseDao.createResponseObjectList(cardList, digimonList);
         String output = responseDao.createResponseJson(responseList);
         if(output == null){
+            output = "Error!";
             return Response.status(404).entity(output).build();
         } else {
             return Response.status(200).entity(output).build();
