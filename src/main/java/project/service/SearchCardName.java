@@ -24,7 +24,7 @@ public class SearchCardName {
         digimonDao = new DigimonDao();
         responseDao = new ResponseDao();
     }
-
+    // TODO create more paths such as card number and stage (which is evolution stage)
     @GET
     @Path("/{param}")
     @Produces("application/json")
