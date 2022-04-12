@@ -9,10 +9,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class DigimonCardResponse {
 
 	@JsonProperty("soure_effect")
-	private Object soureEffect;
+	private Object sourceEffect;
 
 	@JsonProperty("color")
-	private String color;
+	private String cardColor;
 
 	@JsonProperty("digi_type")
 	private String digiType;
@@ -21,13 +21,13 @@ public class DigimonCardResponse {
 	private List<String> cardSets;
 
 	@JsonProperty("level")
-	private int level;
+	private int cardLevel;
 
 	@JsonProperty("card_rarity")
 	private String cardRarity;
 
 	@JsonProperty("artist")
-	private String artist;
+	private String cardArtist;
 
 	@JsonProperty("image_url")
 	private String imageUrl;
@@ -36,13 +36,13 @@ public class DigimonCardResponse {
 	private String mainEffect;
 
 	@JsonProperty("type")
-	private String type;
+	private String cardType;
 
 	@JsonProperty("dp")
-	private int dp;
+	private int digimonPower;
 
 	@JsonProperty("stage")
-	private String stage;
+	private String evolutionStage;
 
 	@JsonProperty("set_name")
 	private String setName;
@@ -57,17 +57,23 @@ public class DigimonCardResponse {
 	private int evolutionCost;
 
 	@JsonProperty("attribute")
-	private String attribute;
+	private String cardAttribute;
 
 	@JsonProperty("cardnumber")
 	private String cardNumber;
 
-	public Object getSoureEffect(){
-		return soureEffect;
+	/*
+    DigimonResponse fields
+     */
+	@JsonProperty("digimonImage")
+	private String digimonImage;
+
+	public Object getSourceEffect(){
+		return sourceEffect;
 	}
 
-	public String getColor(){
-		return color;
+	public String getCardColor(){
+		return cardColor;
 	}
 
 	public String getDigiType(){
@@ -78,16 +84,16 @@ public class DigimonCardResponse {
 		return cardSets;
 	}
 
-	public int getLevel(){
-		return level;
+	public int getCardLevel(){
+		return cardLevel;
 	}
 
 	public String getCardRarity(){
 		return cardRarity;
 	}
 
-	public String getArtist(){
-		return artist;
+	public String getCardArtist(){
+		return cardArtist;
 	}
 
 	public String getImageUrl(){
@@ -98,16 +104,16 @@ public class DigimonCardResponse {
 		return mainEffect;
 	}
 
-	public String getType(){
-		return type;
+	public String getCardType(){
+		return cardType;
 	}
 
-	public int getDp(){
-		return dp;
+	public int getDigimonPower(){
+		return digimonPower;
 	}
 
-	public String getStage(){
-		return stage;
+	public String getEvolutionStage(){
+		return evolutionStage;
 	}
 
 	public String getSetName(){
@@ -126,12 +132,51 @@ public class DigimonCardResponse {
 		return evolutionCost;
 	}
 
-	public String getAttribute(){
-		return attribute;
+	public String getCardAttribute(){
+		return cardAttribute;
 	}
 
 	public String getCardNumber(){
 		return cardNumber;
+	}
+
+	@Override
+	public String toString() {
+		return "DigimonCardResponse{" +
+				"sourceEffect=" + sourceEffect +
+				", cardColor='" + cardColor + '\'' +
+				", digiType='" + digiType + '\'' +
+				", cardSets=" + cardSets +
+				", cardLevel=" + cardLevel +
+				", cardRarity='" + cardRarity + '\'' +
+				", cardArtist='" + cardArtist + '\'' +
+				", imageUrl='" + imageUrl + '\'' +
+				", mainEffect='" + mainEffect + '\'' +
+				", cardType='" + cardType + '\'' +
+				", digimonPower=" + digimonPower +
+				", evolutionStage='" + evolutionStage + '\'' +
+				", setName='" + setName + '\'' +
+				", playCost=" + playCost +
+				", cardName='" + cardName + '\'' +
+				", evolutionCost=" + evolutionCost +
+				", cardAttribute='" + cardAttribute + '\'' +
+				", cardNumber='" + cardNumber + '\'' +
+				", digimonImage='" + digimonImage + '\'' +
+				'}';
+	}
+/*
+    DigimonResponse getters
+     */
+
+	public Object getDigimonImage(){
+		return digimonImage;
+	}
+
+	/*
+    DigimonResponse setters
+     */
+	public void setDigimonImage(String digimonImage) {
+		this.digimonImage = digimonImage;
 	}
 
 
@@ -157,31 +202,7 @@ public class DigimonCardResponse {
 		"image_url":"https://images.digimoncard.io/images/cards/BT1-010.jpg"}
 	*/
 
-	@Override
-	public String toString() {
-		return "DigimonCardResponse{" +
-				"soureEffect=" + soureEffect +
-				", color='" + color + '\'' +
-				", digiType='" + digiType + '\'' +
-				", cardSets=" + cardSets +
-				", level=" + level +
-				", cardRarity='" + cardRarity + '\'' +
-				", artist='" + artist + '\'' +
-				", imageUrl='" + imageUrl + '\'' +
-				", mainEffect='" + mainEffect + '\'' +
-				", type='" + type + '\'' +
-				", dp=" + dp +
-				", stage='" + stage + '\'' +
-				", setName='" + setName + '\'' +
-				", playCost=" + playCost +
-				", cardName='" + cardName + '\'' +
-				", evolutionCost=" + evolutionCost +
-				", attribute='" + attribute + '\'' +
-				", cardNumber='" + cardNumber + '\'' +
-				'}';
-	}
-
-// TODO: add relevant card info such as...
+	// TODO: add relevant card info such as...
 //     "name": "MetalGreymon",
 //    "type": "Digimon",
 //    "color": "Yellow",

@@ -7,24 +7,25 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public class DigimonResponse {
 
 	@JsonProperty("name")
-	private String name;
+	private String digimonName;
 
 	@JsonProperty("img")
-	private String img;
+	private String digimonImage;
 
 	@JsonProperty("level")
-	private int level;
+	private String evolutionStage;
 
 
-
-	public Object getname(){
-		return name;
+	public String getDigimonName() {
+		return digimonName;
 	}
-	public Object getImg(){
-		return img;
+
+	public String getDigimonImage() {
+		return digimonImage;
 	}
-	public Object getlevel(){
-		return level;
+
+	public String getEvolutionStage() {
+		return evolutionStage;
 	}
 
 

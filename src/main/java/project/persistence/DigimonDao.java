@@ -36,4 +36,18 @@ public class DigimonDao {
         }
         return digimonResponseList;
     }
+
+    public List<DigimonResponse> getAllDigimons() {
+        Client client = ClientBuilder.newClient();
+        WebTarget target = client.target("https://digimon-api.herokuapp.com/api/digimon");
+        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        ObjectMapper mapper = new ObjectMapper();
+        try {
+            digimonResponseList = mapper.reader().forType(new TypeReference<List<DigimonResponse>>() {
+            }).readValue(response);
+        } catch (JsonProcessingException jsonProcessingException) {
+            logger.error("Json Processing Exception: ", jsonProcessingException);
+        }
+        return digimonResponseList;
+    }
 }
