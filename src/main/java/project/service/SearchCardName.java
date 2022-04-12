@@ -13,13 +13,13 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.*;
 
-@Path("/cards")
-public class Example {
+@Path("/cardname")
+public class SearchCardName {
     private final DigimonCardDao digimonCardDao;
     private final DigimonDao digimonDao;
     private final ResponseDao responseDao;
 
-    public Example() {
+    public SearchCardName() {
         digimonCardDao = new DigimonCardDao();
         digimonDao = new DigimonDao();
         responseDao = new ResponseDao();
