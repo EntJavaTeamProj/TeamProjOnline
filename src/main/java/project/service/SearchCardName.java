@@ -30,9 +30,11 @@ public class SearchCardName {
     @Produces("application/json")
     public Response getCard(@PathParam("param") String name) {
 
-        // TODO Change names of package and classes
-        // TODO get responses from APIs and map values to Card class, data
-        // TODO CardMapper class
+        // TODO implement if statements to check if the dao was able to retrieve the responses from their respective api
+        //  ex.g. if false in getting card name, then
+        //  output = error message
+        //  return Response.status(404).entity(output).build();
+        //  if true in getting card name then response status of 200 and returns the output of response as json
         List<DigimonCardResponse> cardList = digimonCardDao.getCardByName(name);
         List<DigimonResponse> digimonList = digimonDao.getAllDigimons();
         List<DigimonCardResponse> responseList = responseDao.createResponseObjectList(cardList, digimonList);
