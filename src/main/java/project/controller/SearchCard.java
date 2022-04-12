@@ -32,18 +32,14 @@ public class SearchCard extends HttpServlet {
         //  such as BO-01 getting one result of MetalGreymon
         // grabs the search term from the form
         String searchTerm = req.getParameter("searchTerm");
-
-        DigimonCardDao cardDao = new DigimonCardDao();
-
-        // empty string searchTerm gives all cards by default
-        if (searchTerm != null) {
-            url = "/home";
-            session.setAttribute("cards", cardDao.getCardByName(searchTerm));
-        } else {
-            // error page
+        String[] type = searchTerm.split("/");
+        if(type[0].equals("name")){
+            url = "/cardname";
+        }else if (type[0].equals("number")){
+            url = "/cardnumber";
+        }else{
             url = "/error";
         }
-
         RequestDispatcher dispatcher = req.getRequestDispatcher(url);
         dispatcher.forward(req, resp);
     }
