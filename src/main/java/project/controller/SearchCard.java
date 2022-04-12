@@ -34,11 +34,12 @@ public class SearchCard extends HttpServlet {
 
         String searchTerm = req.getParameter("searchTerm");
         String[] type = searchTerm.split("/");
-
         if(type[0].equals("cardname")){
+            req.setAttribute("searchTerm",type[1]);
             searchTerm = type[1];
             url = "cardname/" + searchTerm;
         }else if (type[0].equals("cardnumber")){
+            req.setAttribute("searchTerm",type[1]);
             searchTerm = type[1];
             url = "cardnumber/" + searchTerm;
         }else{
