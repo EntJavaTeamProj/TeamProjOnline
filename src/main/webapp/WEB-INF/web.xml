@@ -11,6 +11,14 @@
     <location>/error400</location>
   </error-page>
   <error-page>
+    <exception-type>java.io.IOException</exception-type>
+    <location>/exceptionerror</location>
+  </error-page>
+  <error-page>
+    <exception-type>java.lang.Throwable</exception-type>
+    <location>/exceptionerror</location>
+  </error-page>
+  <error-page>
     <location>/error</location>
   </error-page>
 
