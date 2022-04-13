@@ -28,7 +28,13 @@ public class SearchCard extends HttpServlet {
             url = "/services/cardname/" + searchTerm;
         }else if (type[0].equals("cardnumber")){
             url = "/services/cardnumber/" + searchTerm;
-        }else{
+        } else if (type[0].equals("cardtype")) {
+            url = "/services/cardtype/" + searchTerm;
+        } else if (type[0].equals("stage")) {
+            url = "/services/stage/" + searchTerm;
+        } else if (type[0].equals("attribute")) {
+            url = "/services/attribute/" + searchTerm;
+        } else{
             url = "/error";
         }
         resp.sendRedirect(req.getContextPath() + url);

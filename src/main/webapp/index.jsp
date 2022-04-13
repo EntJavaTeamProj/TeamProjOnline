@@ -28,7 +28,7 @@
                     <label class="col-md-4 control-label" for="searchEntry">Search Term</label>
                     <div class="col-md-4">
                         <input id="searchEntry" name="searchEntry" type="text" placeholder="Search Entry" class="form-control input-md" required>
-                        <span class="help-block">Use cardname/[card name] for card name and cardnumber/[card number] for card number</span>
+                        <span class="help-block">Use cardname/[card name], cardnumber/[card number], cardtype/[card type], attribute/[attribute], or stage/[stage]</span>
                     </div>
                 </div>
                 <br>

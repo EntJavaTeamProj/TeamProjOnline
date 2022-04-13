@@ -25,9 +25,9 @@ public class DigimonCardDao {
         digimonCardResponseList = new ArrayList<>();
     }
 
-    public List<DigimonCardResponse> getCardByName(String name) {
+    public List<DigimonCardResponse> getCardByParameter(String searchType, String param) {
         Client client = ClientBuilder.newClient();
-        WebTarget target = client.target("https://digimoncard.io/api-public/search.php?n=" + name);
+        WebTarget target = client.target("https://digimoncard.io/api-public/search.php?" + searchType + param);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
         ObjectMapper mapper = new ObjectMapper();
         try {
@@ -38,21 +38,8 @@ public class DigimonCardDao {
         return digimonCardResponseList;
     }
 
-    public DigimonCardResponse getCardByNumber(String cardNumber) {
-        Client client = ClientBuilder.newClient();
-        WebTarget target = client.target("https://digimoncard.io/api-public/search.php?card=" + cardNumber);
-        String response = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        ObjectMapper mapper = new ObjectMapper();
-        try {
-            digimonCardResponseList = mapper.reader().forType(new TypeReference<List<DigimonCardResponse>>() {}).readValue(response);
-        } catch (JsonProcessingException jsonProcessingException) {
-            logger.error("Json Processing Exception: ", jsonProcessingException);
-        }
-        logger.info(digimonCardResponseList);
-        // This will always work since each card number is unique
-        // as there are no two different cards with the same card number
-        return digimonCardResponseList.get(0);
-    }
+
+
 
 // empty search already results in all the cards from digimon io api
 // although having a method to get all cards may still be needed

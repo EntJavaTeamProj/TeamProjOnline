@@ -17,6 +17,9 @@ public class SearchApplication extends Application {
         HashSet h = new HashSet<Class<?>>();
         h.add(SearchCardName.class);
         h.add(SearchCardNumber.class);
+        h.add(SearchCardType.class);
+        h.add(SearchAttribute.class);
+        h.add(SearchStage.class);
         return h;
     }
 }

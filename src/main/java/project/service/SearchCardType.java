@@ -11,15 +11,15 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
-import java.util.*;
+import java.util.List;
 
-@Path("/cardname")
-public class SearchCardName {
+@Path("/cardtype")
+public class SearchCardType {
     private final DigimonCardDao digimonCardDao;
     private final DigimonDao digimonDao;
     private final ResponseDao responseDao;
 
-    public SearchCardName() {
+    public SearchCardType() {
         digimonCardDao = new DigimonCardDao();
         digimonDao = new DigimonDao();
         responseDao = new ResponseDao();
@@ -28,14 +28,14 @@ public class SearchCardName {
     @GET
     @Path("/{param}")
     @Produces("application/json")
-    public Response getCard(@PathParam("param") String name) {
-        String searchType = "n=";
+    public Response getCard(@PathParam("param") String number) {
+        String searchType = "type=";
         // TODO implement if statements to check if the dao was able to retrieve the responses from their respective api
         //  ex.g. if false in getting card name, then
         //  output = error message
         //  return Response.status(404).entity(output).build();
         //  if true in getting card name then response status of 200 and returns the output of response as json
-        List<DigimonCardResponse> cardList = digimonCardDao.getCardByParameter(searchType, name);
+        List<DigimonCardResponse> cardList = digimonCardDao.getCardByParameter(searchType, number);
         List<DigimonResponse> digimonList = digimonDao.getAllDigimons();
         List<DigimonCardResponse> responseList = responseDao.createResponseObjectList(cardList, digimonList);
         String output = responseDao.createResponseJson(responseList);
