@@ -12,6 +12,112 @@ Implements both the digimon api and digimoncard.io api to combine card informati
 
 [Matthew Lor](https://github.com/Mlor10)
 
+## Resources
+### Retrieve resources through:
+- Digimon Card Name
+- Digimon Card Number
+- Digimon Card Type
+- Digimon Card Attribute
+<!-- end of list -->
+<details>
+<summary>
+Resource Fields
+</summary>
+<blockquote>
+<details>
+<summary>
+Digimon Card Source Effect
+</summary>
+soure_effect 
+</details>
+<details>
+<summary>
+Digimon Card Color Type
+</summary>
+color
+</details>
+<details>
+<summary>
+Digimon Card Digimon Type
+</summary>
+digi_type
+</details>
+<details>
+<summary>
+Digimon Card Sets
+</summary>
+card_sets
+</details>
+<details>
+<summary>
+Digimon Card Level
+</summary>
+level
+</details>
+<details>
+<summary>
+Digimon Card Rarity
+</summary>
+card_rarity
+</details>
+<details>
+<summary>
+Digimon Card Artist
+</summary>
+artist
+</details>
+<details>
+<summary>
+Digimon Card Image
+</summary>
+image_url
+</details>
+<details>
+<summary>
+Digimon Card Main Effect
+</summary>
+main_effect
+</details>
+<details>
+<summary>
+Digimon Card Type
+</summary>
+type
+</details>
+<details>
+<summary>
+Digimon Card Power
+</summary>
+dp
+</details>
+<details>
+<summary>
+Digimon Card Evolution Stage
+</summary>
+stage
+</details>
+<details>
+<summary>
+Digimon Card Set Origin
+</summary>
+set_name
+</details>
+<details>
+<summary>
+Digimon Image
+</summary>
+digimonImage
+</details>
+</blockquote>
+</details>
+
+###Operations
+Each search grabs a response from the two public APIs and combines them into one response object with both of their 
+resource fields combined. It excludes duplicate resource fields from the Digimon API. The response object is converted 
+back into json for the response for the user.
+
+####Response Type is json (document).
+
 ## APIs Used
 
 ### digimoncard.io API
