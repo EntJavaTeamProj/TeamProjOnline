@@ -112,12 +112,12 @@ digimonImage
 </details>
 <!-- end of details -->
 
-###Operations
+### Operations
 Each search grabs a response from the two public APIs and combines them into one response object with both of their 
 resource fields combined. It excludes duplicate resource fields from the Digimon API. The response object is converted 
 back into json for the response for the user.
 
-####Response Type is json (document).
+#### Response Type is json (document).
 
 ## APIs Used
 
