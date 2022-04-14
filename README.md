@@ -110,6 +110,7 @@ digimonImage
 </details>
 </blockquote>
 </details>
+<!-- end of details -->
 
 ###Operations
 Each search grabs a response from the two public APIs and combines them into one response object with both of their 
