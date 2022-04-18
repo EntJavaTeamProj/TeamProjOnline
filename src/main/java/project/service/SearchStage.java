@@ -24,18 +24,13 @@ public class SearchStage {
         digimonDao = new DigimonDao();
         responseDao = new ResponseDao();
     }
-    // TODO create more paths such as card number and stage (which is evolution stage)
+
     @GET
     @Path("/{param}")
     @Produces("application/json")
     public Response getCard(@PathParam("param") String number) {
         String searchType = "stage=";
 
-        // TODO implement if statements to check if the dao was able to retrieve the responses from their respective api
-        //  ex.g. if false in getting card name, then
-        //  output = error message
-        //  return Response.status(404).entity(output).build();
-        //  if true in getting card name then response status of 200 and returns the output of response as json
         List<DigimonCardResponse> cardList = digimonCardDao.getCardByParameter(searchType, number);
         List<DigimonResponse> digimonList = digimonDao.getAllDigimons();
         List<DigimonCardResponse> responseList = responseDao.createResponseObjectList(cardList, digimonList);

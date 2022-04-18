@@ -38,11 +38,4 @@ class DigimonCardDaoTest {
         logger.info(cardDao.getCardByParameter("card=","BO-01").get(0).getCardName());
         assertEquals("A Blazing Storm of Metal!", cardDao.getCardByParameter("card=", "BT5-103").get(0).getCardName());
     }
-
-    /**
-     * Retrieves all cards
-     */
-    @Test
-    void getAllCardsSuccess() {
-    }
 }
