@@ -23,7 +23,7 @@ public class DigimonDao {
         digimonResponseList = new ArrayList<>();
     }
 
-    public List<DigimonResponse> getCardByName(String name) {
+    public List<DigimonResponse> getDigimonByName(String name) {
         Client client = ClientBuilder.newClient();
         WebTarget target = client.target("https://digimon-api.herokuapp.com/api/digimon/name/" + name);
         String response = target.request(MediaType.APPLICATION_JSON).get(String.class);

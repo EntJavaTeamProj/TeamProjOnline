@@ -25,8 +25,8 @@ public class DigimonDaoTest {
      */
     @Test
     void getCardByNameSuccess() {
-        logger.info(digimonDao.getCardByName("MetalGreymon").get(0));
-        assertEquals("MetalGreymon", digimonDao.getCardByName("MetalGreymon").get(0).getDigimonName());
+        logger.info(digimonDao.getDigimonByName("MetalGreymon").get(0));
+        assertEquals("MetalGreymon", digimonDao.getDigimonByName("MetalGreymon").get(0).getDigimonName());
     }
 
     /**
