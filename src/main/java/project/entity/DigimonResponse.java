@@ -28,5 +28,12 @@ public class DigimonResponse {
 		return evolutionStage;
 	}
 
-
+	@Override
+	public String toString() {
+		return "DigimonResponse{" +
+				"digimonName='" + digimonName + '\'' +
+				", digimonImage='" + digimonImage + '\'' +
+				", evolutionStage='" + evolutionStage + '\'' +
+				'}';
+	}
 }
